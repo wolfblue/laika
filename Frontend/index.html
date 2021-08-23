@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Laika</title>
+
+        <link href="icons/css/all.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/lightslider.css" rel="stylesheet" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/lightslider.js"></script>
+        <script src="js/vue.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="content">
+
+            <div id="header">
+
+                <div class="row">
+
+                    <div class="col-lg-8">
+
+                        <div class="row">
+
+                            <div class="borderRightWhite col-lg-3">
+                                <img src="images/secure_mc.svg" />
+                                <span class="fWhite fSmall fBold fFamily1">Compras seguras online</span>
+                            </div>
+
+                            <div class="borderRightWhite col-lg-3">
+                                <img src="images/wallet_mc.svg" />
+                                <span class="fWhite fSmall fBold fFamily1">Pago contra entrega</span>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <img src="images/truck_mc.svg" />
+                                <span class="fWhite fSmall fBold fFamily1">Entregas el mismo día</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 right">
+
+                        <div class="row">
+
+                            <div class="borderRightWhite col-lg-6">
+                                <span class="fWhite fSmall fBold fFamily1">Llámanos 3009108496</span>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <span class="fWhite fSmall fBold fFamily1">Escribenos</span>
+                                <img src="images/youtube_mc.svg" class="hover" />
+                                <img src="images/facebook_mc.svg" class="hover" />
+                                <img src="images/instagram_mc.svg" class="hover" />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row marginTop">
+
+                    <div class="col-lg-8">
+
+                        <img src="images/LaikaMascotas.svg" />
+                        <img src="images/search_icon_mc.svg" class="iconSearch" />
+                        <input type="text" placeholder="¿Qué necesita tu mascota?" class="placeholder search">
+
+                    </div>
+
+                    <div class="col-lg-4 right marginTop">
+
+                        <img src="images/colombia.png" class="flag" />
+                        <span class="fWhite fBold">BOG</span>
+                        <svg class="hover" xmlns="http://www.w3.org/2000/svg" width="14.225" height="8.107" viewBox="0 0 14.225 8.107" style="height: 6px;"><g><path fill="white" d="M104.955 7.816l-6.116 6.116a1 1 0 1 1-1.409-1.409l5.412-5.412L97.43 1.7A1 1 0 0 1 98.839.292l6.116 6.116a1 1 0 0 1 0 1.408z" transform="rotate(90 7.112 7.113) translate(-97.139)"></path></g></svg>
+
+                        <button type="button" class="btnRegister hover">
+                            <span>Crear cuenta</span>
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+
+                        <img src="images/cart_mc.svg" class="hover" />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="main">
+
+                <div class="row">
+
+                    <div class="col-lg-8">
+
+                        <nav class="navbar">
+
+                            <div class="container-fluid">
+
+                              <ul class="nav navbar-nav">
+
+                                <li class="dropdown active">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">
+                                        <img src="images/dog_mc.svg" />
+                                        Perro
+                                     <span class="caret"></span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <ul class="nav navbar-nav">
+                                            <li class="dropdown paddingTop sublinks" v-for="product in products">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    <span>{{product}}</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="dropdown active">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <img src="images/cat_mc_s.svg" />
+                                        Gato
+                                     <span class="caret"></span>
+                                    </a>
+                                </li>
+
+                                <li class="dropdown active paddingTop">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span>Servicios</span>
+                                     <span class="caret"></span>
+                                    </a>
+                                </li>
+
+                                <li class="dropdown active paddingTop">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Promociones
+                                     <span class="caret"></span>
+                                    </a>
+                                </li>
+
+                                <li class="dropdown active paddingTop">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Blog
+                                     <span class="caret"></span>
+                                    </a>
+                                </li>
+
+                              </ul>
+
+                            </div>
+
+                          </nav>
+
+                    </div>
+
+                    <div class="col-lg-4 right">
+                        <img src="images/LaikaMemberNew.svg" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="body">
+ 
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                    </ol>
+
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <img src="images/banner1.png" style="width:100%;">
+                        </div>
+                    
+                        <div class="item">
+                            <img src="images/banner2.png" style="width:100%;">
+                        </div>
+                        
+                        <div class="item">
+                            <img src="images/banner3.png" style="width:100%;">
+                        </div>
+
+                    </div>
+                
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+
+                </div>
+
+                <hr/>
+
+                <div id="slider">
+
+                    <h4 class="bold">Categorías</h4>
+
+                    <ul id="content-slider" class="content-slider">
+
+                        <li>
+                            <img src="images/categoria_alimento-min.png" />
+                            <h4>Alimento</h4>
+                        </li>
+
+                        <li>
+                            <img src="images/categoria_snacks-min.png" />
+                            <h4>Snacks</h4>
+                        </li>
+
+                        <li>
+                            <img src="images/categoria_farmacia.png" />
+                            <h4>Farmapet</h4>
+                        </li>
+
+                        <li>
+                            <img src="images/categoria_higiene.png" />
+                            <h4>Cuidado e Higiene</h4>
+                        </li>
+
+                        <li>
+                            <img src="images/categoria_juguetes.png" />
+                            <h4>Juguetes</h4>
+                        </li>
+
+                        <li>
+                            <img src="images/categoria_accesorios.png" />
+                            <h4>Accesorios</h4>
+                        </li>
+
+                        <li>
+                            <img src="images/categoria_petlover.png" />
+                            <h4>Para PetLovers</h4>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <hr />
+
+                <div id="interes">
+
+                    <div class="row">
+
+                        <div class="col-lg-3 center">
+
+                            <img src="images/LAIKA.png" />
+
+                            <p class="center colorPurple marginTop bold">Siguenos en:</p>
+
+                            <i class="fab fa-youtube fa-2x colorPurple"></i>
+                            <i class="fab fa-instagram fa-2x colorPurple"></i>
+                            <i class="fab fa-facebook-square fa-2x colorPurple"></i>
+
+                        </div>
+
+                        <div class="col-lg-2">
+
+                            <h2 class="titleFooter">ACERCA DE LAIKA</h2>
+                            <p><a class="colorPurple">Sobre Laika</a></p>
+                            <p><a class="colorPurple">Servicios</a></p>
+                            <p><a class="colorPurple">Trabaja con nosotros</a></p>
+                            <p><a class="colorPurple">Blog</a></p>
+                            <p><a class="colorPurple">Términos y condiciones</a></p>
+
+                        </div>
+
+                        <div class="col-lg-2">
+
+                            <h2 class="titleFooter">LINKS DE INTERÉS</h2>
+                            <p><a class="colorPurple">Preguntas frecuentes</a></p>
+                            <p><a class="colorPurple">¿Cómo comprar en Laika?</a></p>
+                            <p><a class="colorPurple">Política de Privacidad</a></p>
+                            <p><a class="colorPurple">Contáctanos</a></p>
+                            <p><a class="colorPurple">Políticas de Entrega</a></p>
+
+                        </div>
+
+                        <div class="col-lg-2">
+
+                            <h2 class="titleFooter">INFORMACIÓN</h2>
+                            <p class="marginBottom10"><a class="colorPurple">Teléfono: 3009108496</a></p>
+                            <p class="marginBottom10"><a class="colorPurple">servicioclientes@laika.com.co</a></p>
+                            <p class="marginBottom10"><a class="colorPurple">Bogotá D.C., Colombia</a></p>
+
+                        </div>
+
+                        <div class="col-lg-3">
+
+                            <h2 class="titleFooter">SUBSCRÍBETE</h2>
+
+                            <p class="colorPurple fSmall">Recibe noticias y promociones al instante.</p>
+
+                            <input type="email" placeholder="Correo electrónico" class="form-control colorPurple marginBottom" />
+                            <input type="checkbox" class="marginTop" />
+                            
+                            <span class="colorPurple fSmall">
+                                He leído y acepto las políticas de privacidad.
+                            </span>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div id="footer">
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+
+                        <p class="bold">
+                            Pago 100% seguro 
+                            <i class="fa fa-lock cGreen"></i> 
+                            SSL
+                        </p>
+
+                        <p class="fSmall">Este certificado garantiza la seguridad de todas tus conexiones mediante cifrado.</p>
+
+                        <img class="cards" src="images/Mercado_pago.png" />
+                        <img class="cards" src="images/epayco.png" />
+                        <img class="cards" src="images/PSE.png" />
+                        <img class="cards" src="images/VISA.png" />
+                        <img class="cards" src="images/master.png" />
+                        <img class="cards" src="images/AMERICAN.png" />
+                        <img class="cards" src="images/DINERS.png" />
+                        <img class="cards" src="images/kushki.svg" />
+
+                    </div>
+
+                    <div class="col-lg-4 center paddingTop3">
+
+                        <img class="proteccion" src="images/proteccion.svg" />
+
+                        <span class="bold">Protección segura 24/7</span>
+
+                    </div>
+
+                    <div class="col-lg-4 store center">
+
+                        <img src="images/APP.png" />
+                        <img src="images/GOOGLEP.png" />
+                        <img src="images/huaweiGallery.png" />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="center copyright">Copyright © 2021 LAIKA - Derechos reservados</p>
+
+            <div class="whatsapp">
+                <img src="images/whatsapp_1.png" />
+            </div>
+
+        </div>
+
+        <script src="js/scripts.js"></script>
+
+    </body>
+
+</html>
